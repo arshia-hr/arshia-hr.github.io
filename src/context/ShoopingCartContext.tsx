@@ -1,6 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
-import cart from "../Pages/cart/Cart";
-import CardItmes from "../Components/cartitmes/CardItmes";
+import React, { createContext, useContext} from "react";
 import { useLocalStorage } from "../Hooks/useLocalStorage";
 
 export interface TChilde {

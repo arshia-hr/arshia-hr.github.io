@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../container/Container";
 import { useShoopingCartContext } from "../../context/ShoopingCartContext";
@@ -10,7 +9,7 @@ import { active } from "../../redux/MenuSlice";
 import SideBar, { checkdark } from "../sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
 export default function Navbar() {
-  const { countCart, getProductQTY } = useShoopingCartContext();
+  const { countCart } = useShoopingCartContext();
   const { value } = useSelector((state: RootState) => state.Menu);
   const dispatch = useDispatch();
   const {theme} = useThemeContext()

@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import Container from '../../Components/container/Container'
 import ProductItmes from '../../Components/productitmes/ProductItmes'
-import { Link } from 'react-router-dom'
 import { getProducts } from '../../Types/types'
-import axios from 'axios'
 import { getProduct } from '../../services/api'
 
 export default function Store() {

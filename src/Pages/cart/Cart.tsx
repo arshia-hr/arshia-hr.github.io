@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from "react";
 import Container from "../../Components/container/Container";
-import ProductItmes from "../../Components/productitmes/ProductItmes";
 import CardItmes from "../../Components/cartitmes/CardItmes";
 import Button from "../../Components/button/Button";
 import { useShoopingCartContext } from "../../context/ShoopingCartContext";
-import { getSingleProduct } from "../../services/api";
-import { Root2 } from "../../Types/types";
 import cartempty from '../../assets/Empty Cart.png'
 import { checkdarklight } from "../../Components/sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
