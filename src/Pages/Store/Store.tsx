@@ -22,6 +22,9 @@ export default function Store() {
           {product.map(result => (
             <ProductItmes  key={result.id} {...result}/>
           ))}
+          <ProductItmes Price={2000} Teacher_Course='arshia-hagh' TimeCourse='5' title='Recat-Basic' id='1'  />
+          <ProductItmes Price={3000} Teacher_Course='arshia-hagh' TimeCourse='3' title='Recat-Advanced' id='2'  />
+          <ProductItmes Price={4000} Teacher_Course='arshia-hagh' TimeCourse='2' title='Recat-Redux' id='3'  />
         </div>
         
          

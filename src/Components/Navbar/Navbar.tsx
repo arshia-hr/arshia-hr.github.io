@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       <Container>
-        <div className={"max-w-[95%] p-3 items-center   justify-between flex text-right rounded-xl shadow-[#000] shadow-md"}>
+        <div className={" p-3 items-center   justify-between flex text-right rounded-xl shadow-[#000] shadow-md"}>
           <div className="flex gap-4 items-center">
             <Link to="/login">
               {logIn ? (

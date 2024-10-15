@@ -24,7 +24,7 @@ function LogIn() {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <Container>
-        <div className={` max-w-[400px] min-w-[400px] ${checkdark(theme)} translate-y-[-80px] m-auto h-[370px]  gap-9 flex flex-col  items-center justify-center  rounded-lg shadow-lg shadow-[#000]`}>
+        <div className={` lg:w-[400px] md:w-[400px] sm:w-[95%]  ${checkdark(theme)} translate-y-[-80px] m-auto h-[370px]  gap-9 flex flex-col  items-center justify-center  rounded-lg shadow-lg shadow-[#000]`}>
 
           <Input  name="Username" value={infoUser.Username} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
           <Input name="Password" value={infoUser.Password} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
