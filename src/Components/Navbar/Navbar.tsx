@@ -54,10 +54,10 @@ export default function Navbar() {
             </button>
           </div>
           <ul className="flex items-center gap-4">
-            <li className={`p-3 ${checkdark(theme)} lg:flex md:hidden small:hidden flex hover:scale-[.9] duration-[0.3s] transition-transform  rounded-xl`}>
+            <li className={`p-3 ${checkdark(theme)} lg:flex md:hidden sm:hidden flex hover:scale-[.9] duration-[0.3s] transition-transform  rounded-xl`}>
               <Link to={"/store"}>Shop</Link>
             </li>
-            <li className={`p-3 ${checkdark(theme)} lg:flex md:hidden small:hidden flex hover:scale-[.9] duration-[0.3s] transition-transform  rounded-xl`}>
+            <li className={`p-3 ${checkdark(theme)} lg:flex md:hidden sm:hidden flex hover:scale-[.9] duration-[0.3s] transition-transform  rounded-xl`}>
               <Link to={"/"}>Home</Link>
             </li>
 

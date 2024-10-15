@@ -11,6 +11,7 @@ src/assets
 node_modules
 dist
 dist-ssr
+*.bat
 *.local
 
 # Editor directories and files
