@@ -2,7 +2,7 @@ import Container from "../../Components/container/Container";
 import CardItmes from "../../Components/cartitmes/CardItmes";
 import Button from "../../Components/button/Button";
 import { useShoopingCartContext } from "../../context/ShoopingCartContext";
-import cartempty from '../../assets/Empty Cart.png'
+
 import { checkdarklight } from "../../Components/sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
 
@@ -12,11 +12,12 @@ export default function cart() {
   return (
     <div className="h-screen">
       <Container>
-        {cartItems.length  > 0 ? (<>
+        
         <div className="grid gap-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1  ">
           {cartItems.map(items => (
             <CardItmes key={items.id} {...items} />
           ))}
+          <CardItmes id={2} qty={2} />
         </div>
         <div className="flex mt-5 border-t-2 border-gray-700 justify-between items-center">
           <div className={`flex ${checkdarklight(theme)} flex-col mt-10`}>
@@ -30,7 +31,7 @@ export default function cart() {
           </Button>
         </div>
         </div>
-        </>) : <img alt="empty"  className="w-[30%] bg-transparent m-auto" src={cartempty} />}
+        
         
 
       </Container>
