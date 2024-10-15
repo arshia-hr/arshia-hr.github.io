@@ -11,6 +11,12 @@ export default {
       colors:{
         'primery': "#000",
         'secondery': '#fff',
+      },
+      screens:{
+        'sm' : '350px',
+        'md' : '750px',
+        'lg': '1024px'
+
       }
     },
   },
