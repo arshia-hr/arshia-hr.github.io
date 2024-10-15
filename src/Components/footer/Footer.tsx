@@ -7,8 +7,8 @@ function Footer() {
     <div
       className={
         theme
-          ? " bg-white text-black grid  lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1"
-          : "bg-black text-white grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 "
+          ? " bg-white text-black grid p-5  lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1"
+          : "bg-black text-white p-5 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 "
       }
     >
       <div className="p-5">
