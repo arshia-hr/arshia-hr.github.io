@@ -76,7 +76,7 @@ function SideBar() {
       <div
         className={`  fixed z-[100] transition-all ${checkdark(theme)}  ${
           value ? "translate-x-0" : "translate-x-[100%]"
-        }  shadow-xl shadow-black h-full md:w-[30%] right-0    sm:w-[50%]  top-0 `}
+        }  shadow-xl shadow-black h-full lg:w-[20%] md:w-[30%] right-0    sm:w-[50%]  top-0 `}
       >
         <ArrowBack
           onClick={() => dispatch(deactive())}
