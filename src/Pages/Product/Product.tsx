@@ -1,20 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getSingleProduct } from "../../services/api";
 import { getProducts } from "../../Types/types";
 import Container from "../../Components/container/Container";
-import react from "../../assets/how-to-use-svgs-react.avif";
-import TSubmenu from "../../Components/T-Submenu/TSubmenu";
 import DropMenu from '../../Components/menu/DropMenu'
-import { useDispatch, useSelector } from "react-redux";
-import { MenuSlice } from "../../redux/MenuSlice";
-import { RootState } from "../../redux/store";
+
 import VCplayer from "../../Components/VCplayer/VCplayer";
 
 function Product() {
   const [singleProduct, setSingleProduct] = useState<getProducts>();
-  const [flag,setFlag] = useState<boolean>(true)
-  const dispatch = useDispatch()
   const parmas = useParams<{ id: string }>();
   useEffect(() => {
     getSingleProduct(parmas.id as string).then((result) => {

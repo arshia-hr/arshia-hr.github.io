@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import react from "../../assets/how-to-use-svgs-react.avif";
 import Button from "../button/Button";
 
@@ -12,7 +12,7 @@ interface TCart {
   id: number | string,
   qty: number
 }
-function CardItmes({id,qty} : Cart) {
+function CardItmes({id} : Cart) {
   const {handleRemoveProduct} = useShoopingCartContext()
   const [title,setTitle] = useState<Root2>()
   const {theme} = useThemeContext()

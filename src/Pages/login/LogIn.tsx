@@ -11,7 +11,7 @@ function LogIn() {
         Username: '',
         Password: ''
     })
-  const { handleLogin, handleLogout } = useLogInContext();
+  const { handleLogin } = useLogInContext();
   const {theme} = useThemeContext()
   const handleChange = (e : React.ChangeEvent<HTMLInputElement>) => {
     const {name,value} = e.target
@@ -28,7 +28,7 @@ function LogIn() {
 
           <Input  name="Username" value={infoUser.Username} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
           <Input name="Password" value={infoUser.Password} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
-          <Button className="w-[70%]" variant="Sucsess" onClick={() => handleLogin(infoUser.username,infoUser.password)}>Login</Button>
+          <Button className="w-[70%]" variant="Sucsess" onClick={() => handleLogin(infoUser.Username,infoUser.Password)}>Login</Button>
         
         </div>
       </Container>

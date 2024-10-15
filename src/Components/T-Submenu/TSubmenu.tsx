@@ -1,7 +1,4 @@
-import React, { ComponentProps } from "react";
-import styled from "./TsSubmenu.module.css";
-import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
+import  { ComponentProps } from "react";
 import { useThemeContext } from "../../context/ThemeContext";
 type TButton = ComponentProps<'ul'>  & {
   flag: boolean

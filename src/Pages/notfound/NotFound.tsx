@@ -1,4 +1,3 @@
-import React from "react";
 import SettingsBackupRestoreIcon from '@mui/icons-material/SettingsBackupRestoreTwoTone';
 function NotFind() {
   return (

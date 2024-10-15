@@ -1,9 +1,8 @@
-import React from "react";
+
 import Container from "../../Components/container/Container";
 import Slider from "../../Components/slider/Slider";
 import VCplayer from "../../Components/VCplayer/VCplayer";
 import Footer from "../../Components/footer/Footer";
-import { Paper } from "@mui/material";
 import { checkdarklight } from "../../Components/sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
 

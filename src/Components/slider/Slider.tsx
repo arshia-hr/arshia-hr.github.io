@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from "../../Components/button/Button";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";

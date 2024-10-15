@@ -3,7 +3,6 @@ import Button from "../button/Button";
 import { Link } from "react-router-dom";
 import { useShoopingCartContext } from "../../context/ShoopingCartContext";
 import { getProducts } from "../../Types/types";
-import CardItmes from "../cartitmes/CardItmes";
 import { checkdark } from "../sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
 type ProductItme = getProducts;
@@ -14,7 +13,7 @@ function ProductItmes({
   TimeCourse,
   id,
 }: ProductItme) {
-  const { cartItems, handleIncreaseProudctQTY } = useShoopingCartContext();
+  const {  handleIncreaseProudctQTY } = useShoopingCartContext();
   const { theme } = useThemeContext();
   return (
     <div

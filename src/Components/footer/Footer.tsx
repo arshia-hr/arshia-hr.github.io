@@ -1,5 +1,4 @@
 import { Telegram, WhatsApp, Instagram, Twitter } from "@mui/icons-material";
-import { checkdarklight } from "../sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
 function Footer() {
   const { theme } = useThemeContext();
