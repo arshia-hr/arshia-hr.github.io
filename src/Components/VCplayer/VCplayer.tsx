@@ -1,4 +1,3 @@
-import ReactPlayer from "react-player";
 import react from "../../assets/how-to-use-svgs-react.avif";
 function VCplayer() {
   return (
