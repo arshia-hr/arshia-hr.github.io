@@ -1,12 +1,11 @@
-import ReactPlayer from 'react-player'
-import react from '../../assets/how-to-use-svgs-react.avif'
+import ReactPlayer from "react-player";
+import react from "../../assets/how-to-use-svgs-react.avif";
 function VCplayer() {
-    
   return (
     <div>
-        <ReactPlayer  style={{margin: 'auto'}} url={react}  width={450} controls pip  volume={1}  /> 
+      <video className="w-full" src={react} controls muted defaultValue={1}></video>
     </div>
-  )
+  );
 }
 
-export default VCplayer
+export default VCplayer;

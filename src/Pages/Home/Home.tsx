@@ -42,7 +42,7 @@ export default function Home() {
         <Slider/>
         <br />
         <br />
-        <div className="text-left">
+        <div className={`text-left ${checkdarklight(theme)}`}>
           <h2 className="text-3xl primary mb-6 ">Why Course Learn-React The best Of Course :</h2>
           <p className="text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio laudantium dolores quam porro. Sint dignissimos nisi ut, beatae aperiam odio asperiores doloribus, soluta porro adipisci saepe laborum voluptatem similique itaque, iure magnam. Optio quaerat nemo aliquid perferendis autem esse iusto repellat reiciendis reprehenderit! Laudantium nostrum consequatur impedit non exercitationem eum delectus possimus minima sapiente sunt, error dolores dolor sit. Eos reiciendis velit, deserunt ipsam ducimus dolores minima unde ex voluptates sed? Cumque vero, dolorem repellendus debitis, praesentium at, natus sunt reiciendis placeat deserunt eum pariatur perferendis animi quidem maxime accusamus itaque suscipit nemo labore delectus. Dolorem facilis corporis tenetur fugiat similique reprehenderit voluptatum quod nesciunt, ipsam nihil. Fuga et quibusdam quas obcaecati reprehenderit explicabo qui blanditiis porro? Explicabo veniam aperiam consectetur ab atque!</p>
           <br/>

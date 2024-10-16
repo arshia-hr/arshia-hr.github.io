@@ -6,9 +6,12 @@ import Container from "../../Components/container/Container";
 import DropMenu from '../../Components/menu/DropMenu'
 
 import VCplayer from "../../Components/VCplayer/VCplayer";
+import { useThemeContext } from "../../context/ThemeContext";
+import { checkdarklight } from "../../Components/sideBar/SideBar";
 
 function Product() {
   const [singleProduct, setSingleProduct] = useState<getProducts>();
+  const {theme} = useThemeContext()
   const parmas = useParams<{ id: string }>();
   useEffect(() => {
     getSingleProduct(parmas.id as string).then((result) => {
@@ -19,9 +22,9 @@ function Product() {
     <div>
       <Container>
         <div className="grid grid-flow-col lg:grid-cols-2 ">
-          <div  className="">
+          <div  >
             <VCplayer/>
-            <div className="flex my-10 justify-around">
+            <div className={`flex ${checkdarklight(theme)} my-10 justify-around`}>
               <h1 className="text-xl">{singleProduct?.Teacher_Course}</h1>
               <h2  className="text-xl">{singleProduct?.title}</h2>
               
@@ -47,7 +50,7 @@ function Product() {
             </div>
           </div>
         <div className=" flex items-center mt-4 flex-col ">
-            <DropMenu className="w-[70%] border-t-2 border-black p-5 "   Title="Topic"/>
+            <DropMenu className={`w-[70%] border-t-2 ${checkdarklight(theme)} border-black p-5 `}   Title="Topic"/>
         </div>
         
 
