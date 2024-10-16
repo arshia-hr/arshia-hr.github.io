@@ -13,8 +13,10 @@ export default {
         'secondery': '#fff',
       },
       screens:{
-        'sm': '300px',
-        'md': '650px'
+        'sm' : '350px',
+        'md' : '750px',
+        'lg': '1024px'
+
       }
     },
   },
