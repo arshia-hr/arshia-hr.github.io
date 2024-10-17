@@ -10,7 +10,7 @@ export default function cart() {
   const {cartItems,Price,discount} = useShoopingCartContext()
   const {theme} = useThemeContext()
   return (
-    <div className="h-screen">
+    
       <Container>
         
         <div className="grid gap-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1  ">
@@ -35,6 +35,6 @@ export default function cart() {
         
 
       </Container>
-    </div>
+    
   );
 }
