@@ -24,7 +24,7 @@ function CardItmes({id} : Cart) {
 
   return (
     <div className=" flex justify-center">
-      <div className={` w-[300px] gap-5 p-2 flex flex-col ${checkdark(theme)} text-center  rounded     roundend`}>
+      <div className={` w-[300px] gap-5 p-2 flex flex-col ${checkdark(theme)} text-center  rounded   `}>
         <img src={react} className='rounded' alt="" />
         <div className="flex gap-4 flex-col">
           <p>{title?.title}</p>

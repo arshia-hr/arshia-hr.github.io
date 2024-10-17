@@ -7,34 +7,41 @@ import { checkdarklight } from "../../Components/sideBar/SideBar";
 import { useThemeContext } from "../../context/ThemeContext";
 
 export default function cart() {
-  const {cartItems,Price,discount} = useShoopingCartContext()
-  const {theme} = useThemeContext()
+  const { cartItems, Price, discount } = useShoopingCartContext();
+  const { theme } = useThemeContext();
   return (
-    
-      <Container>
-        
-        <div className="grid gap-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1  ">
-          {cartItems.map(items => (
+   
+      
+       <Container  className="min-h-screen ">
+        <div className="grid grid-flow-row gap-10 row-auto lg:grid-cols-1  md:grid-cols-4 sm:grid-cols-1 ">
+          {cartItems.map((items) => (
             <CardItmes key={items.id} {...items} />
           ))}
-          <CardItmes id={2} qty={2} />
+      
+
+
+
+          
         </div>
-        <div className="flex mt-5 border-t-2 border-gray-700 justify-between items-center">
+        <div className="flex mt-5 lg:text-2xl md:text-2xl sm:text-3xl w-full border-t-2 bg-black border-gray-700 justify-between items-center">
           <div className={`flex ${checkdarklight(theme)} flex-col mt-10`}>
-          <h1 className="text-3xl">Price: {Price}$ </h1>
-          <span className="text-[#da3b04] text-2xl line-through">discount: 5%</span>
-          <h1 className="text-3xl">Final Price: {discount}$</h1>
+            <h1 className="">Price: {Price}$ </h1>
+            <span className="text-[#da3b04]  line-through">
+              discount: 5%
+            </span>
+            <h1 className="">Final Price: {discount}$</h1>
           </div>
           <div>
-          <Button className="w-[100%] px-5" variant="Sucsess">
-            Pay
-          </Button>
+            <Button className="w-[100%] px-5" variant="Sucsess">
+              Pay
+            </Button>
+          </div>
         </div>
-        </div>
-        
-        
+       </Container>
 
-      </Container>
-    
+   
+
+     
+  
   );
 }
