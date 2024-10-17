@@ -21,8 +21,8 @@ function Product() {
   return (
     <div>
       <Container>
-        <div className="grid grid-flow-col lg:grid-cols-2 ">
-          <div  >
+        <div className="grid grid-flow-col lg:grid-cols-2 md:grid-cols-4 sm:grid-cols-1 sm:grid-flow-row">
+          <div className=" lg:col-start-1 lg:col-end-2 md:col-start-1 md:col-end-3 " >
             <VCplayer/>
             <div className={`flex ${checkdarklight(theme)} my-10 justify-around`}>
               <h1 className="text-xl">{singleProduct?.Teacher_Course}</h1>
@@ -49,8 +49,8 @@ function Product() {
               </p>
             </div>
           </div>
-        <div className=" flex items-center mt-4 flex-col ">
-            <DropMenu className={`w-[70%] border-t-2 ${checkdarklight(theme)} border-black p-5 `}   Title="Topic"/>
+        <div className=" flex items-center lg:col-start-2 lg:col-end-2  mt-4 flex-col md:col-start-3 md:col-end-5   ">
+            <DropMenu className={`lg:w-[70%] md:w-full sm:w-[40$] border-t-2 ${checkdarklight(theme)} border-black p-5 `}   Title="Topic"/>
         </div>
         
 
