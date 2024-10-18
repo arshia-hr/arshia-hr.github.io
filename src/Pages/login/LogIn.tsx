@@ -13,6 +13,7 @@ function LogIn() {
     })
   const { handleLogin } = useLogInContext();
   const {theme} = useThemeContext()
+ 
   const handleChange = (e : React.ChangeEvent<HTMLInputElement>) => {
     const {name,value} = e.target
     setInfoUser({
@@ -26,9 +27,12 @@ function LogIn() {
       <Container>
         <div className={` lg:w-[400px] md:w-[400px] sm:w-[95%]  ${checkdark(theme)} translate-y-[-80px] m-auto h-[370px]  gap-9 flex flex-col  items-center justify-center  rounded-lg shadow-lg shadow-[#000]`}>
 
-          <Input  name="Username" value={infoUser.Username} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
-          <Input name="Password" value={infoUser.Password} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
-          <Button className="w-[70%]" variant="Sucsess" onClick={() => handleLogin(infoUser.Username,infoUser.Password)}>Login</Button>
+          <Input type="text"  name="Username" value={infoUser.Username} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
+          <Input type="password" name="Password" value={infoUser.Password} handle={(e : React.ChangeEvent<HTMLInputElement>) => handleChange(e)}/>
+            {infoUser.Username && infoUser.Password !== '' ? (
+              <Button   className="w-[70%]" variant="Sucsess" onClick={() => handleLogin(infoUser.Username,infoUser.Password)}>Login</Button>
+            ) : (<Button  disabled  className="w-[70%] disabled:bg-gray-600" >Login</Button>)}
+          
         
         </div>
       </Container>
