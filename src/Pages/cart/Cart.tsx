@@ -27,7 +27,7 @@ export default function cart() {
 
           
         </div>
-        <div className="flex mt-5 lg:text-2xl md:text-2xl sm:text-3xl w-full border-t-2 bg-black border-gray-700 justify-between items-center">
+        <div className="flex mt-5 lg:text-2xl md:text-2xl sm:text-3xl w-full border-t-2  border-gray-700 justify-between items-center">
           <div className={`flex ${checkdarklight(theme)} flex-col mt-10`}>
             <h1 className="">Price: {Price}$ </h1>
             <span className="text-[#da3b04]  line-through">
